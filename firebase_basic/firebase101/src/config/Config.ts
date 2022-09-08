@@ -1,3 +1,4 @@
+
 interface Config
 {
     firebaseConfig :
@@ -10,7 +11,7 @@ interface Config
         appId:             string
     }
 }
-
+ 
 export const config: Config = 
 {
     firebaseConfig : 

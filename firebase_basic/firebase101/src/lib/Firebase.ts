@@ -1,5 +1,4 @@
-// Good Partice
-
+// Firebase exports
 
 import { initializeApp } from 'firebase/app'
 import {  getAuth } from 'firebase/auth'
@@ -17,7 +16,7 @@ interface IFirebaseInitializeType
     firebaseStore: Firestore
 }
 
-export default function FirebaseInitialize () : IFirebaseInitializeType
+export function FirebaseInitialize () : IFirebaseInitializeType
 {
     
    const app: FirebaseApp = initializeApp (config.firebaseConfig)

@@ -17,12 +17,12 @@ interface IFirebaseInitializeType
     firebaseStore: Firestore
 }
 
-export default function FirebaseInitialize () 
+export default function FirebaseInitialize () : IFirebaseInitializeType
 {
     
    const app: FirebaseApp = initializeApp (config.firebaseConfig)
    const firebaseAuth: Auth = getAuth (app)
    const firebaseStore: Firestore = getFirestore (app)
 
-   
+   return { app, firebaseAuth, firebaseStore }
 }

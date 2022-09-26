@@ -10,7 +10,14 @@ import type { FirebaseApp } from 'firebase/app'
 import type { Auth } from 'firebase/auth'
 import type { Firestore } from 'firebase/firestore'
 
-export default function FirebaseInitialize ()
+interface IFirebaseInitializeType
+{
+    app: FirebaseApp,
+    firebaseAuth: Auth,
+    firebaseStore: Firestore
+}
+
+export default function FirebaseInitialize () 
 {
     
    const app: FirebaseApp = initializeApp (config.firebaseConfig)

@@ -8,11 +8,14 @@ import  { config } from '../config/Config'
 
 import type { FirebaseApp } from 'firebase/app'
 import type { Auth } from 'firebase/auth'
+import type { Firestore } from 'firebase/firestore'
 
 export default function FirebaseInitialize ()
 {
     
    const app: FirebaseApp = initializeApp (config.firebaseConfig)
    const firebaseAuth: Auth = getAuth (app)
+   const firebaseStore: Firestore = getFirestore (app)
+
    
 }

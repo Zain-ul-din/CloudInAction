@@ -1,12 +1,16 @@
 // Good Partice
 
 
-import { initializeApp, getApp } from 'firebase/app'
+import { initializeApp } from 'firebase/app'
 import {  getAuth } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
 import  { config } from '../config/Config'
 
-export default function ()
-{
+import type { FirebaseApp } from 'firebase/app'
 
+export default function FirebaseInitialize ()
+{
+    
+   const app: FirebaseApp = initializeApp (config.firebaseConfig)
+    
 }

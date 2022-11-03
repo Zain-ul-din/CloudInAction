@@ -8,7 +8,7 @@
 # testing
 /coverage
 
-./src/config/Config.ts
+/src/config/Config.ts
 
 # production
 /build
